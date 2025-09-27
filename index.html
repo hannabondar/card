@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ім'я Прізвище — Контакти</title>
+  <meta name="description" content="Ім'я Прізвище — контакти: телефон, email, сайт, соцмережі.">
+  <style>
+    :root { --bg:#f6f7fb; --card:#fff; --primary:#0b66c3; --muted:#666; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         display:flex;align-items:center;justify-content:center;min-height:100vh;
+         margin:0;padding:24px;background:var(--bg)}
+    .card{max-width:560px;width:100%;background:var(--card);border-radius:14px;
+          box-shadow:0 12px 30px rgba(0,0,0,.08);padding:28px;text-align:center}
+    img.profile{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px}
+    h1{margin:8px 0 4px;font-size:24px}
+    p.role{margin:0;color:var(--muted)}
+    .grid{margin-top:18px;display:grid;gap:10px}
+    .btn{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;color:#fff;background:var(--primary)}
+    .btn.secondary{background:#eceff3;color:#111}
+    .social{display:flex;gap:10px;justify-content:center;margin-top:8px;flex-wrap:wrap}
+    .social a{padding:8px 10px;border-radius:8px;background:#eceff3;text-decoration:none;color:#111}
+    footer{margin-top:14px;color:#999;font-size:12px}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="profile" src="https://placehold.co/240x240" alt="Ім'я Прізвище">
+    <h1>Ім'я Прізвище</h1>
+    <p class="role">Посада / Сфера • Місто, Штат</p>
+
+    <div class="grid">
+      <a class="btn" href="tel:+10000000000">📞 +1 (000) 000‑0000</a>
+      <a class="btn" href="mailto:you@example.com">✉️ you@example.com</a>
+      <a class="btn secondary" href="https://yourdomain.com" target="_blank">🌐 Сайт</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
+      <a class="btn" href="./yourcard.vcf" download>💾 Завантажити контакт (vCard)</a>
+    </div>
+
+    <div class="social">
+      <a href="https://t.me/yourusername" target="_blank">Telegram</a>
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+      <a href="https://wa.me/10000000000" target="_blank">WhatsApp</a>
+    </div>
+
+    <footer>Скануйте QR, щоб зберегти контакт або перейти на сайт.</footer>
+  </main>
+</body>
+</html>
